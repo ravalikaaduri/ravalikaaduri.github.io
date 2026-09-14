@@ -5,39 +5,134 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ravalika Reddy Aduri | Global Engagement Manager</title>
 <style>
-:root{--ink:#3a2924;--muted:#76645d;--paper:#fbf3e9;--card:#fffaf4;--terra:#9a5b46;--warm:#c98262;--line:#e7d5c6;--soft:#f2dfd0}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.nav{position:fixed;z-index:5;top:18px;left:50%;transform:translateX(-50%);width:92%;max-width:1050px;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#fffaf4dd;backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px}.brand{font-weight:800}.navlinks{display:flex;gap:22px;font-size:.9rem;color:var(--muted)}.navlinks a:hover{color:var(--terra)}.menu{display:none;border:0;background:none;font-size:1.2rem}
+:root{
+  --ink:#17283D;
+  --muted:#687586;
+  --paper:#F6F7F8;
+  --white:#FFFFFF;
+  --navy:#17283D;
+  --slate:#687586;
+  --coral:#F47C6B;
+  --coral-soft:#F7C3BB;
+  --electric:#3B82F6;
+  --line:#D9DEE5;
+  --shadow:0 18px 45px rgba(23,40,61,.10);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.nav{position:fixed;z-index:5;top:18px;left:50%;transform:translateX(-50%);width:92%;max-width:1050px;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:#fffdf8dd;backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:999px}.brand-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--sun);margin-right:9px;vertical-align:2px}.brand{font-weight:800}.navlinks{display:flex;gap:22px;font-size:.9rem;color:var(--muted)}.navlinks a:hover{color:var(--terra)}.menu{display:none;border:0;background:none;font-size:1.2rem}
 .hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:6vw;padding:125px 8vw 70px}.eyebrow,.label{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--terra)}h1,h2,h3{font-family:Georgia,serif}.hero h1{font-size:clamp(4rem,8vw,7.5rem);line-height:.88;letter-spacing:-.055em;margin:18px 0 28px}.hero h1 span{display:block;font-style:italic;color:var(--terra)}.hero p,.lead{color:var(--muted);font-size:1.18rem;max-width:720px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 20px;border:1px solid var(--terra);border-radius:999px;transition:.25s}.btn.primary{background:var(--terra);color:white}.btn:hover{transform:translateY(-3px)}.portrait{max-width:430px;justify-self:end;position:relative}.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:45% 45% 18% 18%;box-shadow:22px 24px 0 var(--soft)}
 section{padding:105px 8vw}.wrap{max-width:1100px;margin:auto}.title{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.05;margin:0 0 24px}.about{display:grid;grid-template-columns:1fr 1fr;gap:65px}.copy p{color:var(--muted);font-size:1.08rem}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}.card{background:var(--card);border:1px solid var(--line);padding:26px;border-radius:24px;min-height:185px;transition:.3s}.card:hover{transform:translateY(-7px);box-shadow:0 18px 40px #53342818}.card h3{font-size:1.35rem;margin:10px 0 7px}.card p{color:var(--muted);margin:0}.prof{background:#fff7ee}.resume{display:flex;justify-content:space-between;align-items:center;gap:20px;background:var(--card);border:1px solid var(--line);padding:30px;border-radius:26px;margin-top:32px}.resume h3{margin:0 0 5px;font-size:1.6rem}.resume p{margin:0;color:var(--muted)}
 .video-section{background:#ead9cc}.video-box{background:#241a17;padding:10px;border-radius:28px;margin-top:30px}.video{position:relative;padding-top:56.25%;overflow:hidden;border-radius:19px}.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.watch{text-align:center;margin-top:15px;color:var(--terra);font-weight:700}.writing{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:40px 0;display:flex;justify-content:space-between;align-items:center;gap:20px}.arrow{font-size:3rem;color:var(--terra)}.contact{background:var(--terra);color:#fff7ee;text-align:center}.contact .label{color:#f0c9a8}.contact p{color:#f3d9ca;max-width:620px;margin:auto}.socials{display:flex;justify-content:center;gap:22px;margin-top:28px}.socials a{text-decoration:underline;text-underline-offset:5px}footer{text-align:center;padding:24px;color:var(--muted);font-size:.85rem}.reveal{opacity:0;transform:translateY(22px);transition:.75s ease}.reveal.show{opacity:1;transform:none}
 @media(max-width:800px){.navlinks{display:none}.menu{display:block}.nav.open .navlinks{display:flex;position:absolute;right:0;top:55px;flex-direction:column;background:var(--card);padding:18px 22px;border:1px solid var(--line);border-radius:18px}.hero,.about{grid-template-columns:1fr}.portrait{justify-self:center;max-width:330px}.cards{grid-template-columns:1fr}.resume{flex-direction:column;align-items:flex-start}.hero h1{font-size:clamp(3.8rem,16vw,6rem)}section{padding:80px 7vw}}
+
+.copy-note{color:var(--muted);font-size:.98rem;margin-top:18px;max-width:430px}\n
+
+/* Deep navy / slate / coral palette */
+body{
+  background:var(--paper);
+  color:var(--ink);
+}
+nav{
+  background:rgba(255,255,255,.95);
+  border-color:var(--line);
+}
+a{color:var(--navy)}
+.hero{
+  background:linear-gradient(135deg,#FFFFFF 0%,#F6F7F8 62%,#EAF0F7 100%);
+}
+.hero h1{color:var(--navy)}
+.label{color:var(--slate)}
+.card{
+  background:var(--white);
+  border-color:var(--line);
+}
+.card:hover{
+  border-color:#AEB8C5;
+  box-shadow:var(--shadow);
+}
+.btn{
+  background:var(--coral);
+  color:#FFFFFF;
+  border-color:var(--coral);
+}
+.btn:hover{
+  background:#E66D5D;
+  border-color:#E66D5D;
+}
+.photo-wrap{
+  background:linear-gradient(145deg,#EAF0F7,var(--coral-soft),#DCE8F8);
+}
+.spring-note{
+  margin:18px 0 0;
+  padding:18px 20px;
+  background:linear-gradient(90deg,#F3F5F7,#EAF0F7);
+  border-left:4px solid var(--coral);
+  border-radius:14px;
+  color:var(--muted);
+}
+footer{
+  background:#E9EDF2;
+}
+::selection{
+  background:var(--coral-soft);
+  color:var(--navy);
+}
+
+
+.contact-copy{max-width:760px;margin:0 auto 28px}.contact-copy p{margin:0 0 16px;line-height:1.8}.contact-copy p:last-child{margin-bottom:0}
+
+/* Accessibility/readability refinements */
+.contact, .contact p, .contact h2, .contact strong {
+  color: #17283D !important;
+}
+.contact .label {
+  color: #17283D !important;
+}
+.contact a {
+  color: #17283D !important;
+  border-color: #17283D !important;
+}
+.resume a,
+.resume .btn,
+#writing a,
+.writing a {
+  color: #17283D !important;
+  font-weight: 700;
+}
+.resume .btn,
+#writing .btn,
+.writing .btn {
+  background: #F47C6B !important;
+  border-color: #17283D !important;
+}
+
 </style>
 </head>
 <body>
-<nav class="nav" id="nav"><a class="brand" href="#top">RRA</a><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#speaking">Speaking</a><a href="#writing">Writing</a><a href="#contact">Connect</a></div><button class="menu" id="menu">☰</button></nav>
+<nav class="nav" id="nav"><a class="brand" href="#top">A little space</a><div class="navlinks"><a href="#about">About</a><a href="#work">Work</a><a href="#speaking">Speaking</a><a href="#writing">Writing</a><a href="#contact">Connect</a></div><button class="menu" id="menu">☰</button></nav>
 
 <header class="hero" id="top">
 <div class="reveal"><div class="eyebrow">Global Engagement Manager · Strategy · Product · AI</div>
 <h1>Hi, I'm <span>Ravalika.</span></h1>
-<p>Curious about people, ideas, cultures, and how things work. I like turning complexity into something useful — and I care deeply about the people I meet along the way.</p>
+<p>I want to do work I’m proud of and still have a life that feels like mine. I care about people. I care about doing things well. And I’m learning that ambition and breathing room don’t have to be opposites.</p>
 <div class="actions"><a class="btn primary" href="#about">Come say hello ↓</a><a class="btn" href="#work">Explore my work</a></div></div>
 <div class="portrait reveal"><img src="ravalika-photo.jpg" alt="Ravalika in a warm cafe setting"></div>
 </header>
 
 <section id="about"><div class="wrap"><div class="about">
-<div class="reveal"><div class="label">A little about me</div><h2 class="title">People make the world interesting.</h2></div>
-<div class="copy reveal"><p>I’m deeply curious about people — where they come from, what shapes them, and the stories they carry. I love discovering different cultures, meeting new people, and finding the unexpected connections that make the world feel a little smaller.</p><p>I tend to care deeply about the people in my life. When I connect with someone, I’m emotionally invested and genuinely show up for them. Being someone people can rely on matters a lot to me.</p><p>At work and outside of it, I’m drawn to meaningful conversations, new experiences, and ideas that make me see things differently.</p></div></div>
-<div class="cards"><div class="card reveal"><div></div><h3>Cultures</h3><p>Always curious about places, traditions, perspectives, and ways of life different from my own.</p></div><div class="card reveal"><div></div><h3>People</h3><p>I love meeting people, listening to their stories, and building genuine connections.</p></div><div class="card reveal"><div></div><h3>Showing up</h3><p>I care deeply, stay present, and try to be someone others can count on.</p></div></div></div></section>
+<div class="reveal"><div class="label">A little about me</div>
+<h2 class="title">People make the world interesting.</h2><p class="copy-note"></p></div>
+<div class="copy reveal"><p>I like people. I like the stories they carry, the places they come from, the way they see the world. Put me in a room with people I’ve never met and, chances are, I’ll want to know who they are.</p><p>I care about doing what I say I’ll do. I care about being kind when nobody is keeping score. I care about the small things too — checking in, making time, noticing when someone needs a little help.</p><p>The world is already moving fast. I don’t need to make it faster. I’m ambitious, absolutely. I want to grow, build, learn, and do meaningful work. But I also want sunlight through the window, a good conversation that runs too long, a little room to think, and time for the people I love.</p></div></div>
+</div></section>
 
-<section class="prof" id="work"><div class="wrap"><div class="label">My professional side</div><h2 class="title reveal">Strategy with a human lens.</h2><p class="lead reveal">My work sits at the intersection of strategy, product thinking, growth, and AI transformation. If you want the detailed version,please find my resume in the link below.</p><div class="resume reveal"><div><h3>Want the résumé version?</h3><p>Open my latest résumé for the full professional story.</p></div><a class="btn primary" href="Ravalika_Aduri_Capital_One_Resume.pdf" target="_blank">View my résumé ↗</a></div></div></section>
+<section class="prof" id="work"><div class="wrap"><div class="label">My professional side</div><h2 class="title reveal">Strategy with a human lens.</h2><p class="lead reveal">My work is about figuring things out, bringing people together, and turning ideas into something that actually moves. I work across strategy, product, growth, and AI transformation.</p><div class="resume reveal"><div><h3>Want the résumé version?</h3><p>Open my latest résumé for the full professional story.</p></div><a class="btn primary" href="Ravalika_Aduri_Capital_One_Resume.pdf" target="_blank">View my résumé ↗</a></div></div></section>
 
 <section class="video-section" id="speaking"><div class="wrap"><div class="label">On stage</div><h2 class="title reveal">Some ideas are better spoken than written.</h2><p class="lead reveal">Here’s a talk from the Fleurix Conference in 2025 — one of the places where I get to explore ideas, connect with people, and share what I’m learning.</p><div class="video-box reveal"><div class="video"><iframe src="https://www.youtube.com/embed/Ys4wFES-Suo" title="Fleurix Conference - 2025" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div><div class="watch"><a href="https://youtu.be/Ys4wFES-Suo" target="_blank">Watch on YouTube ↗</a></div></div></section>
 
-<section id="writing"><div class="wrap"><div class="label">Beyond the résumé</div><h2 class="title reveal">I write because I'm still figuring things out.</h2><div class="writing reveal"><p class="lead">Thoughts, observations, lessons, and the occasional rabbit hole — shared on Substack.</p><a class="arrow" href="https://substack.com/@rra2897?utm_source=user-menu" target="_blank">↗</a></div></div></section>
+<section id="writing"><div class="wrap"><div class="label">Beyond the résumé</div><h2 class="title reveal">I write because I'm still figuring things out.</h2><div class="writing reveal"><div><p class="lead">Thoughts, observations, lessons, and the occasional rabbit hole — shared on Substack.</p><a class="btn primary" href="https://substack.com/@rra2897?utm_source=user-menu" target="_blank">Read &amp; subscribe on Substack ↗</a></div></div></div></section>
 
-<section><div class="wrap"><div class="label">What I bring</div><div class="cards"><div class="card reveal"><div></div><h3>Curiosity</h3><p>I ask questions, explore perspectives, and enjoy learning something I didn't know yesterday.</p></div><div class="card reveal"><div></div><h3>Clarity</h3><p>I like making complicated problems easier to understand and act on.</p></div><div class="card reveal"><div></div><h3>Connection</h3><p>I believe good work gets better when people feel heard, trusted, and included.</p></div></div></div></section>
 
-<section class="contact" id="contact"><div class="wrap"><div class="label">Let's connect</div><h2 class="title">Have an idea, a question, or a good conversation?</h2><p>I’d love to hear from you. The internet is big; meaningful conversations don't have to be complicated.</p><div class="actions" style="justify-content:center"><a class="btn" href="mailto:ravalikaaduri@gmail.com">Email me</a></div><div class="socials"><a href="https://www.linkedin.com/in/ravalika-reddy-aduri/" target="_blank">LinkedIn ↗</a><a href="https://substack.com/@rra2897?utm_source=user-menu" target="_blank">Substack ↗</a><a href="https://youtu.be/Ys4wFES-Suo" target="_blank">Fleurix talk ↗</a></div></div></section>
+
+<section class="contact" id="contact"><div class="wrap"><div class="label">Let's connect</div><h2 class="title">Have an idea, a question, or a good conversation?</h2><div class="contact-copy"><p>Some of the best things begin with a simple conversation.<br>If something here made you pause, think, or want to say hello — <strong>say hello.</strong></p><p></p><p></p><p></p></div><div class="actions" style="justify-content:center"><a class="btn" href="mailto:ravalikaaduri@gmail.com">Email me</a></div><div class="socials"><a href="https://www.linkedin.com/in/ravalika-reddy-aduri/" target="_blank">LinkedIn ↗</a></div></div></section>
 <footer>© 2026 Ravalika Reddy Aduri · Made with curiosity and a little warmth.</footer>
 <script>
 const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.12});
